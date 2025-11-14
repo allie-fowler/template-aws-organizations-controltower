@@ -491,7 +491,7 @@ Applied mainly to `Workloads_Prod` (detect-only in `Workloads_Test`):
 Implementation:
 
 - Preventive / Proactive:
-  - CT custom guardrails / hooks for API Gateway, ElastiCache, RDS.  
+  - CT custom guardrails / hooks for API Gateway, ElastiCache, RDS.
 - Detective:
   - Security Hub controls for:
     - API Gateway TLS/encrypted cache.
@@ -525,6 +525,7 @@ SSM is not enforced solely by CT; we standardize via CT customizations and IaC.
 
 > All production EC2 instances are expected to be managed via AWS Systems Manager.
 > This requires:
+>
 > - SSM Agent installed in the base image.
 > - Network access to SSM endpoints (via public internet or VPC endpoints).
 > - IAM roles granting SSM permissions to the instance.
